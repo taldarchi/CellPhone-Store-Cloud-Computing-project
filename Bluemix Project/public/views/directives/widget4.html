@@ -1,0 +1,28 @@
+<div class="heading1">Summery</div>
+<div class="summeryBox">
+    <div class="widget4-box">
+        <div class="heading2">1</div>
+        <div class="module4Group" ng-repeat="group in groups track by $index">
+            <div class="module4Text" ng-repeat="device in group.devices track by $index " ng-show="device.selected">{{device.name}}</div>
+        </div>
+
+    </div>
+    <!--<div class="widget4-box">-->
+        <!--<div class="heading2">2</div>-->
+        <!--<div class="module4-time" ng-repeat="protocol in protocols track by $index" ng-show="protocol.selected">{{protocol.name}}</div>-->
+        <!--<div ng-show="!protocolSelected()" class="selectText" >-Select Protocol-</div>-->
+    <!--</div>-->
+    <!--<div class="widget4-box">-->
+        <!--<div class="heading2">3</div>-->
+        <!--<div class="module4-time" ng-repeat="time in times track by $index" ng-show="time.selected">{{time.name}}</div>-->
+        <!--<div ng-show="!timeSelected()" class="selectText" >-Select Time-</div>-->
+    <!--</div>-->
+    <div class="buttons">
+        <div ng-click="clear()" class="clear">Clear</div>
+        <div ng-click="addbasket()" class="startLearning"><i class="fa fa-caret-right" aria-hidden="true"></i> Add to Basket</div>
+        <div ng-click="getbasket()" class="startLearning"><i class="fa fa-caret-right" aria-hidden="true"></i> View Basket</div>
+        <div ng-click="submit()" class="startLearning"><i class="fa fa-caret-right" aria-hidden="true"></i> Buy Now!!</div>
+    </div>
+
+
+</div>
